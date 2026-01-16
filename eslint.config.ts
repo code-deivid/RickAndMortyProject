@@ -19,5 +19,19 @@ export default defineConfigWithVueTs(
   ...pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
 
-  skipFormatting,
+  skipFormatting, {
+  name: "app/custom-rules",
+  rules: {
+    "vue/multi-word-component-names": "off", //Para que no te salte un error al no ser 2 Palabras nombre de Componente
+    "@typescript-eslint/no-unused-vars": [
+      "warn", //Pone en amarillo las variables que no usas
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrors: "none",
+      },
+    ],
+  },
+},
+
 )

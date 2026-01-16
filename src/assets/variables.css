@@ -1,0 +1,9 @@
+:root {
+  --background-header: #161f0d;
+  --background-app: #212c17;
+  --background-card: #50712e;
+  --background-card-login: #465e30;
+  --text-header: #a2e065;
+  --text-header-hover: #c2ea9a;
+  --button: #92b66e;
+}

@@ -1,0 +1,10 @@
+@import 'tailwindcss/utilities.css';
+@import 'tailwindcss/theme.css' layer(theme);
+@import './variables.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
